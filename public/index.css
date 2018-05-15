@@ -1,0 +1,12 @@
+* {margin: 0; padding: 0;}
+a {text-decoration:none;}
+.box {border: 1px gray solid;}
+#container {width: 100%;overflow: hidden;}
+#open {width: 400px; height: 240px;text-align: center}
+#open p {height: 30px;padding-top: 25px;}
+#open hr {margin: 30px 0 0 0;}
+#json-editor {display: none;width: 400px;height: 300px;margin: 0 auto;text-align: right;opacity: 0;padding: 5px;}
+#json-textarea {width: 400px;height: 270px;}
+#end {width: 400px; height: 240px;text-align: center;display: none;margin: 0 auto;opacity: 0;}
+#end p {height: 30px;padding-top: 25px;}
+#end hr {margin: 30px 0 0 0;}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Db-Builder-Web</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="open" class="box">
+            <p>如何创建数据库 / how to creat db</p>
+            <hr />
+            <p style="text-decoration: line-through;"><a id="animate-a" href="javascript:;">按照向导 / according to guidance</a></p>
+            <p><a id="json-a" href="javascript:;">直接写json / just write json</a></p>
+        </div>
+        <div id="json-editor" class="box">
+            <textarea id="json-textarea">
+{
+    "db": "db_test",
+    "tablePrefix": "tb_",
+    "tables": {
+        "test": [
+            [
+                "id",
+                "int",
+                [
+                    "primary",
+                    "increment"
+                ]
+            ]
+        ]
+    }
+}
+            </textarea>
+            <p><a id="json-finish-a" href="javascript:;">写完了 / done</a></p>
+        </div>
+        <div id="end" class="box">
+            <p>你想要什么 / what you want</p>
+            <hr />
+            <p><a id="get-sql-a" href="javascript:;">sql语句 / sql statements</a></p>
+            <p><a id="get-bean-a" href="javascript:;">javaBean文件 / javaBeans</a></p>
+        </div>
+    </div>
+    <script src="move.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
