@@ -31,7 +31,7 @@ $('json-finish-a').addEventListener('click', () => {
     $('end').style.display = 'block';
     move('#json-editor').sub('margin-left', 400).set('opacity', 0).set('height', 0).end();
     move('#end').set('opacity', 1).end();
-    post('http://localhost/build', {
+    post('build', {
         in  : 'json',
         out : 'sql',
         data: data,
@@ -61,7 +61,7 @@ $('get-bean-a').addEventListener('click', () =>{
     let packageInput = document.createElement('input')
     form.style.display = 'none'
     form.method = 'POST'
-    form.action = 'http://localhost/build'
+    form.action = 'build'
     inInput.name = 'in'
     outInput.name = 'out'
     dataInput.name = 'data'

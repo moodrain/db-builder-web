@@ -24,7 +24,7 @@ class Index
 
     function index()
     {
-        return 'Hello World';
+        header('Location: db-builder/build.html');
     }
 
     function build()
