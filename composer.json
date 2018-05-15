@@ -1,0 +1,11 @@
+{
+    "require": {
+        "moodrain/moodrain": "dev-master",
+        "maennchen/zipstream-php": "^0.5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
