@@ -1,4 +1,4 @@
 <?php
-namespace Muyu;
+use Muyu\Support\Tool;
 require (__DIR__ . '/../vendor/autoload.php');
-Tool::route('db-builder');
+Tool::route();

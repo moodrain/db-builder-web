@@ -21,15 +21,11 @@
     "db": "db_test",
     "tablePrefix": "tb_",
     "tables": {
-        "test": [
-            [
-                "id",
-                "int",
-                [
-                    "primary",
-                    "increment"
-                ]
-            ]
+        "user": [
+            ["id", "int", ["primary", "increment"]],
+            ["username", "varchar", ["unique"]],
+            ["birthdate", "date"],
+            ["introduce", "text"]
         ]
     }
 }

@@ -1,8 +1,8 @@
 <?php
 namespace App\Controller;
 
-use App\Support\DbBuilder;
-use Muyu\Tool;
+use Muyu\Support\DbBuilder;
+use Muyu\Support\Tool;
 use ZipStream\Exception;
 use ZipStream\ZipStream;
 
@@ -24,7 +24,7 @@ class Index
 
     function index()
     {
-        header('Location: db-builder/build.html');
+        echo file_get_contents('index.html');
     }
 
     function build()
